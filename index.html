@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomboid das Minas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box">Zomboid das Minas</div>
+    <div class="links">
+        Servidor de Project Zomboid das minas: 
+        <a href="https://www.twitch.tv/biagomez" target="_blank">biagomez</a>,
+        <a href="https://www.twitch.tv/gabivalotta" target="_blank">gabivalotta</a> e 
+        <a href="https://www.twitch.tv/niponica" target="_blank">niponica</a>.
+    </div>
+    <button class="tutorial-button" onclick="toggleTutorial()">Como jogar?</button>
+    
+	<div id="tutorial-section" class="tutorial-section" style="display: none;">
+	
+		<p><strong style="color: #c8a2c8; font-size: 24px;">PREPARANDO O JOGO</strong></p>
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">1º</strong> Você precisará ter o jogo instalado via Steam (<a href="https://store.steampowered.com/agecheck/app/108600/" target="_blank" style="color: #c8a2c8; font-weight: bold;">clique aqui para ver a página de compra</a>) ou de alguma outra forma.</p>
+
+		<p style="font-size: 14px; color: gray;">*Incentivamos a comprar o jogo para ajudar a empresa que criou, que é Indiestone, uma empresa de jogos indies. Mas caso não seja possível adquirir o jogo neste momento, mas queira muito experimentar a gameplay, entre em contato com um dos mods das lives para saber sobre a possibilidade de instalação de outras formas. 😉☠️</p>
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">2º</strong> Depois de instalado, localize a pasta de instalação central do jogo. Se sua instalação foi feita pela Steam:
+			<ul>
+				<li>Abra a Steam.</li>
+				<li>Clique em BIBLIOTECA e abra a página do jogo.</li>
+				<li>Clique no símbolo de engrenagem ⚙️ > GERIR > VER PASTA DE INSTALAÇÃO.</li>
+			</ul>
+		</p>
+		<img src="imagem-achar-pasta-steam.png" alt="Pasta de instalação Steam">
+
+		<p style="color: red;">Atenção: se for sua primeira instalação, experimente abrir o jogo pelo menos uma vez para que os arquivos necessários para jogar online sejam criados no seu sistema. Depois é só fechar o jogo novamente e voltar pro tutorial.</p>
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">3º</strong> Na pasta de instalação, vá até o ícone de abertura do jogo (ProjectZomboid32 ou ProjectZomboid64 dependendo do seu computador, geralmente o 64) e crie um atalho para algum local onde você tem acesso rápido a seus jogos, como por exemplo, área de trabalho.</p>
+		<img src="imagem-criar-atalho.png" alt="Criar atalho">
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">4º</strong> Vá até o atalho criado, clique com o botão direito e clique em <span style="color: #00bfff; font-weight: bold;">PROPRIEDADES</span>, na aba <span style="color: #00bfff; font-weight: bold;">DESTINO</span> dê um espaço e escreva <span style="color: #32cd32;">-nosteam</span>. Depois clique em <span style="color: #00bfff; font-weight: bold;">APLICAR</span> para salvar a alteração.</p>
+		<img src="imagem-adicionar-nosteam.png" alt="Adicionar -nosteam">
+
+		<p style="color: red;"><strong>ATENÇÃO: sempre que for jogar no servidor das minas, você terá que abrir o jogo por este atalho.</strong></p>
+
+		<p><strong style="color: #c8a2c8; font-size: 24px;">INSTALANDO MODS</strong></p>
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">5º</strong> <a href="https://1drv.ms/u/c/207a219fd28669a3/EdbPA80OO6tDi3pdhxHevqIBOHA-O_04kWGKmkQIaR2exg?e=8MobCB" target="_blank" style="color: #00bfff; font-weight: bold;">CLIQUE AQUI</a> para baixar os <span style="color: #00bfff; font-weight: bold;">MODS</span> necessários para entrar no servidor. Caso ainda não tenha, você precisará de um programa de extração de arquivos, como <span style="color: #00bfff; font-weight: bold;">WINRAR</span>, <span style="color: #00bfff; font-weight: bold;">7ZIP</span>, <span style="color: #00bfff; font-weight: bold;">WINZIP</span> facilmente encontrados no Google.</p>
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">6º</strong> Agora, localize a pasta de configurações do jogo que é criada quando você abre ele pela primeira vez, geralmente em: <span style="color: #00bfff; font-weight: bold;">C:/USUÁRIOS/Zomboid</span>, dentro dessa pasta está a subpasta mods, EXTRAIA OS ARQUIVOS dos mods baixados <strong>DENTRO DESSA PASTA > C:/USUÁRIOS/Zomboid/mods</strong>.</p>
+
+		<p style="color: red;">Atenção: <strong>NÃO É A PASTA DE INSTALAÇÃO DO JOGO</strong>, mas sim a pasta de configuração. Caso tenha instalado o jogo mas nunca abriu ele, é necessário abrir pelo menos uma vez para que essa pasta Zomboid seja criada em C:/USUÁRIOS/Zomboid. Após abrir, feche o jogo e retorne ao tutorial.</p>
+
+		<p><strong style="color: #c8a2c8; font-size: 24px;">LOGANDO NO SERVIDOR</strong></p>
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">7º</strong> Agora que você já instalou o jogo e colocou os mods necessários na pasta indicada, abra o jogo pelo atalho criado com <strong>-nosteam</strong>.</p>
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">8º</strong> No menu principal clique em <strong>JOIN</strong> ou <strong>CONECTAR</strong>.</p>
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">9º</strong> Insira as seguintes informações nas janela indicadas de login:
+			<ul>
+				<li>OPCIONAL - Nome do servidor: <span style="color: #00bfff; font-weight: bold;">Zomboid das Minas</span></li>
+				<li>IP ou endereço: <span style="color: #00bfff; font-weight: bold;">zomboiddasminas.servegame.com</span></li>
+				<li>Port: <span style="color: #00bfff; font-weight: bold;">16261</span></li>
+				<li>Utilizador ou Login: <span style="color: #00bfff; font-weight: bold;">Crie um nome para seu login de apenas 1 palavra</span></li>
+				<li>Palavra-chave ou Password: <span style="color: #00bfff; font-weight: bold;">Crie uma senha para seu login</span></li>
+			</ul>
+		</p>
+		<p style="color: red;">Atenção: lembre-se de salvar seu login e senha caso queira entrar em gameplays futuras 😉</p>
+		<img src="imagem-dados-servidor.png" alt="Dados do servidor">
+
+		<p><strong style="color: #c8a2c8; font-size: 20px;">10º</strong> Depois disso, clique em entrar no servidor, aguarde a conexão e divirta-se no apocalipse das minas. 🧟‍♀️</p>
+
+		<p style="color: #00bfff; font-size: 20px; font-weight: bold;">Caso tenha problemas para entrar no servidor, procure os moderadores em uma das lives.</p>
+	</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
